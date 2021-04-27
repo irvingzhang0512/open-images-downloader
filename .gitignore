@@ -1,4 +1,6 @@
 images/
 annotations/
 .vscode/
-*.txt
+labels/
+*.cache
+*filelist*.txt

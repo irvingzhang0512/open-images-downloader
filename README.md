@@ -1,5 +1,8 @@
 # Download Selected classes Images From Open-Images-Dataset V6
 
+
+## Tutorials
+
 ```shell
 # Step 1: Download annotations
 mkdir annotations
@@ -20,4 +23,35 @@ python downloader.py filelist.txt --num_processes 5 --download_folder ./images
 # class_names_file = "annotations/class-descriptions-boxable.csv"
 # images_dir = "./images"
 python visualize.py
+
+# Step 5: Convert BBoxes to Yolo
+# Generate annotation file for all images in `images_dir`
+# and generate filelist file in `./yolo`.
+# Save filelist file `{split}_{version}.txt` into `./yolo/{version}`
+python convert_to_yolo.py
+```
+
+## Dataset Versions
+
+### V0.1
+
++ 从 Open Images Dataset V6 中获取所有存在“Door”或“Window”的图片作为原始数据。
++ 根据原始图片，获取所有对应的 `Person, Door, Window` 的标注矿信息作为目标检测任务类别。
++ Train、Val、Test就是根据Open Images Dataset V6的原始比例。
++ 数据量：
+  + 图片数量：67918/1031/3182
+  + BBoxes 数量：
+```
+train: 
+Person -> 8531
+Door -> 19256
+Window -> 503467
+validation: 
+Person -> 375
+Door -> 287
+Window -> 7583
+test: 
+Person -> 1137
+Door -> 787
+Window -> 25557
 ```
