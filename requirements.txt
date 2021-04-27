@@ -1,0 +1,6 @@
+requests
+opencv-python
+pandas
+boto3
+botocore
+tqdm
