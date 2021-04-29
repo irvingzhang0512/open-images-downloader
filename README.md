@@ -55,3 +55,6 @@ Person -> 1137
 Door -> 787
 Window -> 25557
 ```
++ 训练结果
+  + yolov5s：mAP 0.20
+  + yolov5x：mAP 0.24
