@@ -1,5 +1,14 @@
 # Download Selected classes Images From Open-Images-Dataset V6
 
+## Description
+
++ Download custom classes from Open Images Dataset V6:
+  + Download annotations.
+  + Generate filelist for custom classes by `generate_filelist.py`.
+  + Download images with the generated filelist from aws by `downloader.py`.
+    + This script is modified from the official downloader.
++ Visualize downloaded results by `visualize.py`.
++ Convert bbox to yolo format by `convert_to_yolo.py`.
 
 ## Tutorials
 

@@ -1,6 +1,7 @@
-images/
-annotations/
+images
+annotations
+yolo
 .vscode/
-labels/
+labels
 *.cache
 *filelist*.txt
