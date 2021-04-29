@@ -1,6 +1,5 @@
 images
 annotations
-yolo
 .vscode/
 labels
 *.cache
