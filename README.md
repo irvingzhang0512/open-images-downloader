@@ -21,7 +21,7 @@ wget -P annotations/ https://storage.googleapis.com/openimages/v5/test-annotatio
 wget -P annotations/ https://storage.googleapis.com/openimages/v5/class-descriptions-boxable.csv
 
 # Step 2: Generate filelist
-python generate_filelist.py Window Door --filelist filelist2.txt --splits train validation test
+python generate_filelist.py Window Door --filelist filelist.txt --splits train validation test
 
 # Step 3: Download Images to `./images` with generated filelist
 # Modify official downloader.py: skip images that are already downloaded
